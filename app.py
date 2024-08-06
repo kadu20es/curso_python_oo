@@ -38,7 +38,7 @@ ContaBancaria.ativar_conta(conta2)
 print(conta1) # sim
 print(conta2) # não
 '''
-
+'''
 from modelos.restaurante import Restaurante
 
 restaurante1 = Restaurante('Bistrô', 'Gourmet')
@@ -56,3 +56,26 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    '''
+
+from modelos.livro import Livro
+
+livro0 = Livro('João e o pé de feijão', 'João', 1980)
+livro1 = Livro('João e o pé de feijão2 - o retorno', 'João', 1980)
+livro2 = Livro('Pedro e a estação', 'Pedro', 1980)
+livro3 = Livro('Meu pé de laranja lima', 'Monteiro Lobato', 1908)
+livro4 = Livro('Entrevista com o vampiro', 'Anne Rice', 1980)
+livro5 = Livro('Eu e minha boca grande', 'Tiago Pereira', 1983)
+livro6 = Livro('A casa da mãe Joana', 'Pereirão', 1984)
+
+
+
+print('----------------')
+livro3.verificar_disponibilidade(1980)
+
+#print(livro1.verificar_disponibilidade(1980))
+livro1.emprestar_livro()
+
+Livro.verificar_disponibilidade(1980)
+#print(livro1.verificar_disponibilidade(1980))
