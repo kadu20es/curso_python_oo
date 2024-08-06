@@ -1,5 +1,4 @@
 import os
-from modelos import restaurante
 
 os.system('clear')
 
